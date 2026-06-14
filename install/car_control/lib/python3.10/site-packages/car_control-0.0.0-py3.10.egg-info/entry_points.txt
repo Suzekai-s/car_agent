@@ -1,5 +1,0 @@
-[console_scripts]
-cmd_vel_relay = car_control.cmd_vel_relay:main
-joy_simulator = car_control.joy_simulator:main
-serial_bridge = car_control.serial_bridge:main
-
