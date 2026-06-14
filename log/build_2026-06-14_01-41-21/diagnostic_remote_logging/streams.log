@@ -1,0 +1,84 @@
+[0.143s] Invoking command in '/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/szk/workspace/car_distributed/car_agent/src/diagnostics/diagnostic_remote_logging -DCMAKE_INSTALL_PREFIX=/home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging
+[0.189s] -- The C compiler identification is GNU 11.4.0
+[0.301s] -- The CXX compiler identification is GNU 11.4.0
+[0.364s] -- Detecting C compiler ABI info
+[0.422s] -- Detecting C compiler ABI info - done
+[0.427s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.427s] -- Detecting C compile features
+[0.427s] -- Detecting C compile features - done
+[0.430s] -- Detecting CXX compiler ABI info
+[0.492s] -- Detecting CXX compiler ABI info - done
+[0.496s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.497s] -- Detecting CXX compile features
+[0.497s] -- Detecting CXX compile features - done
+[0.510s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.598s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.676s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.737s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.742s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.750s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.764s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.779s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.824s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.827s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.040s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.541s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.486s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.495s] -- Looking for pthread.h
+[2.629s] -- Looking for pthread.h - found
+[2.630s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.767s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.769s] -- Found Threads: TRUE  
+[2.817s] -- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.845s] -- Found diagnostic_msgs: 4.9.1 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[3.468s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[3.472s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.477s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.538s] -- Configuring done
+[3.563s] -- Generating done
+[3.570s] -- Build files have been written to: /home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging
+[3.585s] Invoked command in '/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/szk/workspace/car_distributed/car_agent/src/diagnostics/diagnostic_remote_logging -DCMAKE_INSTALL_PREFIX=/home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging
+[3.587s] Invoking command in '/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging -- -j32 -l32
+[3.630s] [ 10%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[3.630s] [ 20%] Building CXX object CMakeFiles/influx_component.dir/src/influxdb_connector.cpp.o
+[3.630s] [ 30%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[3.632s] [ 40%] Building CXX object CMakeFiles/influxdb_connector.dir/rclcpp_components/node_main_influxdb_connector.cpp.o
+[4.379s] [ 50%] Linking CXX static library libgtest_main.a
+[4.408s] [ 50%] Built target gtest_main
+[6.021s] [ 60%] Linking CXX static library libgtest.a
+[6.057s] [ 60%] Built target gtest
+[6.083s] [ 70%] Linking CXX executable influxdb_connector
+[6.222s] [ 70%] Built target influxdb_connector
+[10.547s] [ 80%] Linking CXX shared library libinflux_component.so
+[10.919s] [ 80%] Built target influx_component
+[10.932s] [ 90%] Building CXX object CMakeFiles/unit_tests.dir/test/influx_line_protocol.cpp.o
+[13.167s] [100%] Linking CXX executable unit_tests
+[13.314s] [100%] Built target unit_tests
+[13.319s] Invoked command in '/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging -- -j32 -l32
+[13.320s] Invoking command in '/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging
+[13.324s] -- Install configuration: ""
+[13.324s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/lib/diagnostic_remote_logging/influxdb_connector
+[13.325s] -- Set runtime path of "/home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/lib/diagnostic_remote_logging/influxdb_connector" to ""
+[13.325s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/lib/libinflux_component.so
+[13.329s] -- Set runtime path of "/home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/lib/libinflux_component.so" to ""
+[13.329s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/ament_index/resource_index/package_run_dependencies/diagnostic_remote_logging
+[13.330s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/ament_index/resource_index/parent_prefix_path/diagnostic_remote_logging
+[13.330s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/ament_prefix_path.sh
+[13.330s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/ament_prefix_path.dsv
+[13.330s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/path.sh
+[13.330s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/path.dsv
+[13.330s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.bash
+[13.331s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.sh
+[13.331s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.zsh
+[13.331s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.dsv
+[13.331s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/package.dsv
+[13.331s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/ament_index/resource_index/packages/diagnostic_remote_logging
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/ament_index/resource_index/rclcpp_components/diagnostic_remote_logging
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/export_influx_componentExport.cmake
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/export_influx_componentExport-noconfig.cmake
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/ament_cmake_export_targets-extras.cmake
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/diagnostic_remote_loggingConfig.cmake
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/diagnostic_remote_loggingConfig-version.cmake
+[13.332s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_remote_logging/share/diagnostic_remote_logging/package.xml
+[13.333s] Invoked command in '/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging

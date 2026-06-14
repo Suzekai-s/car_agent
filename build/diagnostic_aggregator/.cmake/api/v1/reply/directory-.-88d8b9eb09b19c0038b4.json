@@ -1,0 +1,809 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ament_environment_hooks",
+			"_ament_cmake_python_register_environment_hook",
+			"ament_python_install_package",
+			"_ament_cmake_python_install_package",
+			"pluginlib_export_plugin_description_file",
+			"_ament_cmake_export_libraries_register_environment_hook",
+			"ament_export_targets",
+			"ament_index_register_resource",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"include",
+			"ament_execute_extensions",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_cmake_python-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake",
+			"/opt/ros/humble/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_cmake_export_libraries-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_targets/cmake/ament_export_targets.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake",
+			"/opt/ros/humble/share/pluginlib/cmake/pluginlib_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_targets/cmake/ament_cmake_export_targets_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 174,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 184,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 192,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 38,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 36,
+				"parent" : 6
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 7
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 39,
+				"parent" : 5
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 154,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 181,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 191,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 203,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 207,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 216,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 89,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 218,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 59,
+				"parent" : 19
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 25,
+				"parent" : 20
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 21
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 21
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 229,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 10,
+				"line" : 66,
+				"parent" : 24
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 25
+			},
+			{
+				"file" : 8,
+				"parent" : 26
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 47,
+				"parent" : 27
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 29,
+				"parent" : 28
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 29
+			},
+			{
+				"command" : 13,
+				"file" : 8,
+				"line" : 48,
+				"parent" : 27
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 43,
+				"parent" : 31
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 32
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 25
+			},
+			{
+				"file" : 11,
+				"parent" : 34
+			},
+			{
+				"command" : 1,
+				"file" : 11,
+				"line" : 20,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 36
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 36
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 36
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 36
+			},
+			{
+				"command" : 14,
+				"file" : 11,
+				"line" : 26,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 91,
+				"parent" : 41
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 91,
+				"parent" : 41
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 91,
+				"parent" : 41
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 107,
+				"parent" : 41
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 119,
+				"parent" : 41
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 25
+			},
+			{
+				"file" : 14,
+				"parent" : 47
+			},
+			{
+				"command" : 15,
+				"file" : 14,
+				"line" : 16,
+				"parent" : 48
+			},
+			{
+				"command" : 8,
+				"file" : 13,
+				"line" : 29,
+				"parent" : 49
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 50
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 25
+			},
+			{
+				"file" : 15,
+				"parent" : 52
+			},
+			{
+				"command" : 8,
+				"file" : 15,
+				"line" : 22,
+				"parent" : 53
+			},
+			{
+				"command" : 0,
+				"file" : 7,
+				"line" : 105,
+				"parent" : 54
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 48,
+				"parent" : 25
+			},
+			{
+				"file" : 16,
+				"parent" : 56
+			},
+			{
+				"command" : 0,
+				"file" : 16,
+				"line" : 28,
+				"parent" : 57
+			},
+			{
+				"command" : 16,
+				"file" : 10,
+				"line" : 68,
+				"parent" : 24
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 122,
+				"parent" : 59
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 122,
+				"parent" : 59
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 122,
+				"parent" : 59
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 150,
+				"parent" : 59
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 157,
+				"parent" : 59
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/diagnostic_aggregator",
+			"paths" : 
+			[
+				"aggregator_node"
+			],
+			"targetId" : "aggregator_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/diagnostic_aggregator",
+			"paths" : 
+			[
+				"add_analyzer"
+			],
+			"targetId" : "add_analyzer::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libdiagnostic_aggregator.so"
+			],
+			"targetId" : "diagnostic_aggregator::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libdiagnostic_aggregator_analyzers.so"
+			],
+			"targetId" : "diagnostic_aggregator_analyzers::@6890427a1f51a3e7e1df",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/pythonpath.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/pythonpath.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/diagnostic_aggregator-4.0.7-py3.10.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_python/diagnostic_aggregator/diagnostic_aggregator.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/diagnostic_aggregator",
+			"paths" : 
+			[
+				{
+					"from" : "diagnostic_aggregator",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/example.launch.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "lib/diagnostic_aggregator",
+			"paths" : 
+			[
+				"example/example_pub.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"example/example_analyzers.yaml",
+				"example/example_add_analyzers.yaml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"plugin_description.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/library_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/diagnostic_aggregator"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/diagnostic_aggregator"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 37,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 40,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/environment",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 42,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 43,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 46,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 51,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_index/share/ament_index/resource_index/packages/diagnostic_aggregator"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 55,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/diagnostic_aggregator__pluginlib__plugin",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_index/share/ament_index/resource_index/diagnostic_aggregator__pluginlib__plugin/diagnostic_aggregator"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 58,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/cmake",
+			"exportName" : "diagnostic_aggregatorTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "diagnostic_aggregator::@6890427a1f51a3e7e1df",
+					"index" : 4
+				},
+				{
+					"id" : "diagnostic_aggregator_analyzers::@6890427a1f51a3e7e1df",
+					"index" : 5
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 60,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/cmake",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 61,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/cmake",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 62,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/cmake",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 63,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator/cmake",
+			"paths" : 
+			[
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_core/diagnostic_aggregatorConfig.cmake",
+				"/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator/ament_cmake_core/diagnostic_aggregatorConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 64,
+			"component" : "Unspecified",
+			"destination" : "share/diagnostic_aggregator",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

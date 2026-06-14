@@ -1,0 +1,10 @@
+build/
+install/
+log/
+*.pyc
+__pycache__/
+*.deb
+.vscode/
+# 第三方源码由 colcon_agent.sh 自动克隆，不提交
+src/Lslidar_ROS2_driver/
+src/diagnostics/

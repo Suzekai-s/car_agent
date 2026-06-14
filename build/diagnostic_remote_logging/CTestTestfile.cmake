@@ -1,0 +1,9 @@
+# CMake generated Testfile for 
+# Source directory: /home/szk/workspace/car_distributed/car_agent/src/diagnostics/diagnostic_remote_logging
+# Build directory: /home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test([=[unit_tests]=] "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging/test_results/diagnostic_remote_logging/unit_tests.gtest.xml" "--package-name" "diagnostic_remote_logging" "--output-file" "/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging/ament_cmake_gtest/unit_tests.txt" "--command" "/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging/unit_tests" "--gtest_output=xml:/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging/test_results/diagnostic_remote_logging/unit_tests.gtest.xml")
+set_tests_properties([=[unit_tests]=] PROPERTIES  LABELS "gtest" REQUIRED_FILES "/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging/unit_tests" TIMEOUT "60" WORKING_DIRECTORY "/home/szk/workspace/car_distributed/car_agent/build/diagnostic_remote_logging" _BACKTRACE_TRIPLES "/opt/ros/humble/share/ament_cmake_test/cmake/ament_add_test.cmake;125;add_test;/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_test.cmake;86;ament_add_test;/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake;93;ament_add_gtest_test;/home/szk/workspace/car_distributed/car_agent/src/diagnostics/diagnostic_remote_logging/CMakeLists.txt;60;ament_add_gtest;/home/szk/workspace/car_distributed/car_agent/src/diagnostics/diagnostic_remote_logging/CMakeLists.txt;0;")
+subdirs("gtest")

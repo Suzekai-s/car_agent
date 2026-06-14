@@ -1,0 +1,17 @@
+# 手柄 → /cmd_vel 映射配置
+teleop_twist_joy_node:
+  ros__parameters:
+    enable_button: 4          # LB (左肩键)
+    enable_turbo_button: 5    # RB (右肩键)
+    axis_linear:
+      x: 1                   # 左摇杆 Y 轴
+    axis_angular:
+      z: 3                   # 右摇杆 X 轴
+    scale_linear:
+      x: 1.0
+    scale_angular:
+      z: 1.5
+    scale_linear_turbo:
+      x: 2.0
+    scale_angular_turbo:
+      z: 2.5

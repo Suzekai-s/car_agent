@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-88d8b9eb09b19c0038b4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "diagnostic_aggregator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "add_analyzer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-add_analyzer-4684aebbef203465be32.json",
+					"name" : "add_analyzer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aggregator_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aggregator_node-80c3bd3336a47cb6fa95.json",
+					"name" : "aggregator_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_diagnostic_aggregator_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_diagnostic_aggregator_egg-a72a4e9eb93e8810b576.json",
+					"name" : "ament_cmake_python_build_diagnostic_aggregator_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_diagnostic_aggregator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_diagnostic_aggregator-0aca290c8aaf7cb17b52.json",
+					"name" : "ament_cmake_python_copy_diagnostic_aggregator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "diagnostic_aggregator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diagnostic_aggregator-59ff2dca10db8186994c.json",
+					"name" : "diagnostic_aggregator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "diagnostic_aggregator_analyzers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diagnostic_aggregator_analyzers-ae9956dbc18e349735a5.json",
+					"name" : "diagnostic_aggregator_analyzers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "diagnostic_aggregator_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diagnostic_aggregator_uninstall-48717af36e7ec6e01331.json",
+					"name" : "diagnostic_aggregator_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-93babe77cadbc4cb291f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator",
+		"source" : "/home/szk/workspace/car_distributed/car_agent/src/diagnostics/diagnostic_aggregator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

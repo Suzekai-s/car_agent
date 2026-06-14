@@ -1,0 +1,176 @@
+[0.075s] Invoking command in '/home/szk/workspace/car_distributed/car_agent/build/lslidar_driver': AMENT_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/lib:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/szk/workspace/car_distributed/car_agent/src/Lslidar_ROS2_driver/lslidar_driver -DCMAKE_INSTALL_PREFIX=/home/szk/workspace/car_distributed/car_agent/install/lslidar_driver
+[0.142s] -- The C compiler identification is GNU 11.4.0
+[0.320s] -- The CXX compiler identification is GNU 11.4.0
+[0.463s] -- Detecting C compiler ABI info
+[0.532s] -- Detecting C compiler ABI info - done
+[0.537s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.537s] -- Detecting C compile features
+[0.537s] -- Detecting C compile features - done
+[0.539s] -- Detecting CXX compiler ABI info
+[0.619s] -- Detecting CXX compiler ABI info - done
+[0.623s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.623s] -- Detecting CXX compile features
+[0.623s] -- Detecting CXX compile features - done
+[0.778s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[0.781s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.868s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.985s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.988s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.992s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.999s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.008s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.033s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.034s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.526s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.881s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.561s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.566s] -- Found Threads: TRUE  
+[2.607s] -- Checking for module 'eigen3'
+[2.615s] --   Found eigen3, version 3.4.0
+[2.634s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.634s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.648s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[3.042s] -- Checking for module 'flann'
+[3.051s] --   Found flann, version 1.9.1
+[3.203s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[3.203s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.230s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[3.260s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[3.392s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[3.392s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[3.395s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[3.553s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[3.797s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[3.818s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[4.298s] -- Found X11: /usr/include   
+[4.299s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[4.399s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[4.399s] -- Looking for gethostbyname
+[4.488s] -- Looking for gethostbyname - found
+[4.488s] -- Looking for connect
+[4.561s] -- Looking for connect - found
+[4.561s] -- Looking for remove
+[4.637s] -- Looking for remove - found
+[4.637s] -- Looking for shmat
+[4.705s] -- Looking for shmat - found
+[4.705s] -- Looking for IceConnectionNumber in ICE
+[4.791s] -- Looking for IceConnectionNumber in ICE - found
+[5.212s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[5.214s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[5.217s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[5.219s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[5.321s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[5.366s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[5.369s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[5.374s] -- Found utf8cpp: /usr/include/utf8cpp  
+[5.428s] -- Checking for module 'libusb-1.0'
+[5.438s] --   Found libusb-1.0, version 1.0.25
+[5.493s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[5.496s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[5.496s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.593s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[5.593s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.593s] ** WARNING ** io features related to pcap will be disabled
+[6.389s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.394s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.398s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.141s] -- Found Qhull version 8.0.2
+[7.892s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.510s] -- looking for PCL_COMMON
+[8.510s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[8.510s] -- looking for PCL_KDTREE
+[8.511s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[8.511s] -- looking for PCL_OCTREE
+[8.511s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[8.511s] -- looking for PCL_SEARCH
+[8.511s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[8.512s] -- looking for PCL_SAMPLE_CONSENSUS
+[8.512s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[8.512s] -- looking for PCL_FILTERS
+[8.512s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[8.513s] -- looking for PCL_2D
+[8.513s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[8.513s] -- looking for PCL_GEOMETRY
+[8.513s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[8.513s] -- looking for PCL_IO
+[8.513s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[8.513s] -- looking for PCL_FEATURES
+[8.514s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[8.514s] -- looking for PCL_ML
+[8.514s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[8.514s] -- looking for PCL_SEGMENTATION
+[8.515s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[8.515s] -- looking for PCL_VISUALIZATION
+[8.515s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[8.515s] -- looking for PCL_SURFACE
+[8.516s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[8.516s] -- looking for PCL_REGISTRATION
+[8.516s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[8.516s] -- looking for PCL_KEYPOINTS
+[8.517s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[8.517s] -- looking for PCL_TRACKING
+[8.517s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[8.518s] -- looking for PCL_RECOGNITION
+[8.518s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[8.518s] -- looking for PCL_STEREO
+[8.518s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[8.518s] -- looking for PCL_APPS
+[8.519s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[8.519s] -- looking for PCL_IN_HAND_SCANNER
+[8.519s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[8.519s] -- looking for PCL_MODELER
+[8.520s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[8.520s] -- looking for PCL_POINT_CLOUD_EDITOR
+[8.521s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[8.521s] -- looking for PCL_OUTOFCORE
+[8.522s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[8.522s] -- looking for PCL_PEOPLE
+[8.522s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[8.523s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[8.523s] -- Found diagnostic_updater: 4.0.7 (/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/share/diagnostic_updater/cmake)
+[8.535s] -- Found lslidar_msgs: 1.2.0 (/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/share/lslidar_msgs/cmake)
+[8.544s] -- Found pluginlib: 5.1.4 (/opt/ros/humble/share/pluginlib/cmake)
+[8.959s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[9.037s] -- Configuring done
+[9.100s] -- Generating done
+[9.106s] -- Build files have been written to: /home/szk/workspace/car_distributed/car_agent/build/lslidar_driver
+[9.116s] Invoked command in '/home/szk/workspace/car_distributed/car_agent/build/lslidar_driver' returned '0': AMENT_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/lib:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/szk/workspace/car_distributed/car_agent/src/Lslidar_ROS2_driver/lslidar_driver -DCMAKE_INSTALL_PREFIX=/home/szk/workspace/car_distributed/car_agent/install/lslidar_driver
+[9.117s] Invoking command in '/home/szk/workspace/car_distributed/car_agent/build/lslidar_driver': AMENT_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/lib:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/szk/workspace/car_distributed/car_agent/build/lslidar_driver -- -j32 -l32
+[9.143s] [ 20%] Building CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver_node.cc.o
+[9.143s] [ 40%] Building CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver.cc.o
+[9.144s] [ 60%] Building CXX object CMakeFiles/lslidar_driver_node.dir/src/input.cc.o
+[9.145s] [ 80%] Building CXX object CMakeFiles/lslidar_driver_node.dir/src/lsiosr.cpp.o
+[17.443s] [100%] Linking CXX executable lslidar_driver_node
+[18.259s] [100%] Built target lslidar_driver_node
+[18.265s] Invoked command in '/home/szk/workspace/car_distributed/car_agent/build/lslidar_driver' returned '0': AMENT_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/lib:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/szk/workspace/car_distributed/car_agent/build/lslidar_driver -- -j32 -l32
+[18.266s] Invoking command in '/home/szk/workspace/car_distributed/car_agent/build/lslidar_driver': AMENT_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/lib:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/szk/workspace/car_distributed/car_agent/build/lslidar_driver
+[18.270s] -- Install configuration: ""
+[18.270s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/launch
+[18.270s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/launch/lslidar_launch.py
+[18.270s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/launch/lslidar_double_launch.py
+[18.271s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/params
+[18.271s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/params/lsx10_1.yaml
+[18.271s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/params/lsx10_2.yaml
+[18.271s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/params/lsx10.yaml
+[18.271s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/rviz
+[18.271s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/rviz/lslidar.rviz
+[18.271s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node
+[18.273s] -- Set runtime path of "/home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node" to ""
+[18.273s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/ament_index/resource_index/package_run_dependencies/lslidar_driver
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/ament_index/resource_index/parent_prefix_path/lslidar_driver
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.sh
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.dsv
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/environment/path.sh
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/environment/path.dsv
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/local_setup.bash
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/local_setup.sh
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/local_setup.zsh
+[18.274s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/local_setup.dsv
+[18.275s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/package.dsv
+[18.275s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/ament_index/resource_index/packages/lslidar_driver
+[18.275s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.275s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.275s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake
+[18.275s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake
+[18.275s] -- Installing: /home/szk/workspace/car_distributed/car_agent/install/lslidar_driver/share/lslidar_driver/package.xml
+[18.275s] Invoked command in '/home/szk/workspace/car_distributed/car_agent/build/lslidar_driver' returned '0': AMENT_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/lib:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/szk/workspace/car_distributed/car_agent/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/szk/workspace/car_distributed/car_agent/build/lslidar_driver

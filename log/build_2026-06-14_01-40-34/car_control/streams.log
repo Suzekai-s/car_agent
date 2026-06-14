@@ -1,0 +1,46 @@
+[0.407s] Invoking command in '/home/szk/workspace/car_distributed/car_agent/src/car_control': PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/build/car_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car_control build --build-base /home/szk/workspace/car_distributed/car_agent/build/car_control/build install --record /home/szk/workspace/car_distributed/car_agent/build/car_control/install.log --single-version-externally-managed install_data
+[0.516s] running egg_info
+[0.516s] creating ../../build/car_control/car_control.egg-info
+[0.517s] writing ../../build/car_control/car_control.egg-info/PKG-INFO
+[0.517s] writing dependency_links to ../../build/car_control/car_control.egg-info/dependency_links.txt
+[0.517s] writing entry points to ../../build/car_control/car_control.egg-info/entry_points.txt
+[0.517s] writing requirements to ../../build/car_control/car_control.egg-info/requires.txt
+[0.517s] writing top-level names to ../../build/car_control/car_control.egg-info/top_level.txt
+[0.517s] writing manifest file '../../build/car_control/car_control.egg-info/SOURCES.txt'
+[0.518s] reading manifest file '../../build/car_control/car_control.egg-info/SOURCES.txt'
+[0.518s] writing manifest file '../../build/car_control/car_control.egg-info/SOURCES.txt'
+[0.518s] running build
+[0.518s] running build_py
+[0.518s] creating /home/szk/workspace/car_distributed/car_agent/build/car_control/build
+[0.518s] creating /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib
+[0.519s] creating /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control
+[0.519s] copying car_control/joy_simulator.py -> /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control
+[0.519s] copying car_control/cmd_vel_relay.py -> /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control
+[0.519s] copying car_control/serial_bridge.py -> /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control
+[0.519s] copying car_control/__init__.py -> /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control
+[0.519s] running install
+[0.519s] running install_lib
+[0.519s] creating /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control
+[0.519s] copying /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control/joy_simulator.py -> /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control
+[0.519s] copying /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control/cmd_vel_relay.py -> /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control
+[0.519s] copying /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control/serial_bridge.py -> /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control
+[0.519s] copying /home/szk/workspace/car_distributed/car_agent/build/car_control/build/lib/car_control/__init__.py -> /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control
+[0.520s] byte-compiling /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control/joy_simulator.py to joy_simulator.cpython-310.pyc
+[0.520s] byte-compiling /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control/cmd_vel_relay.py to cmd_vel_relay.cpython-310.pyc
+[0.520s] byte-compiling /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control/serial_bridge.py to serial_bridge.cpython-310.pyc
+[0.521s] byte-compiling /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control/__init__.py to __init__.cpython-310.pyc
+[0.521s] running install_data
+[0.521s] creating /home/szk/workspace/car_distributed/car_agent/install/car_control/share/ament_index
+[0.521s] creating /home/szk/workspace/car_distributed/car_agent/install/car_control/share/ament_index/resource_index
+[0.521s] creating /home/szk/workspace/car_distributed/car_agent/install/car_control/share/ament_index/resource_index/packages
+[0.521s] copying resource/car_control -> /home/szk/workspace/car_distributed/car_agent/install/car_control/share/ament_index/resource_index/packages
+[0.522s] copying package.xml -> /home/szk/workspace/car_distributed/car_agent/install/car_control/share/car_control
+[0.522s] creating /home/szk/workspace/car_distributed/car_agent/install/car_control/share/car_control/launch
+[0.522s] running install_egg_info
+[0.523s] Copying ../../build/car_control/car_control.egg-info to /home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages/car_control-0.0.0-py3.10.egg-info
+[0.523s] running install_scripts
+[0.534s] Installing cmd_vel_relay script to /home/szk/workspace/car_distributed/car_agent/install/car_control/bin
+[0.534s] Installing joy_simulator script to /home/szk/workspace/car_distributed/car_agent/install/car_control/bin
+[0.535s] Installing serial_bridge script to /home/szk/workspace/car_distributed/car_agent/install/car_control/bin
+[0.535s] writing list of installed files to '/home/szk/workspace/car_distributed/car_agent/build/car_control/install.log'
+[0.546s] Invoked command in '/home/szk/workspace/car_distributed/car_agent/src/car_control' returned '0': PYTHONPATH=/home/szk/workspace/car_distributed/car_agent/build/car_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/szk/workspace/car_distributed/car_agent/install/car_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car_control build --build-base /home/szk/workspace/car_distributed/car_agent/build/car_control/build install --record /home/szk/workspace/car_distributed/car_agent/build/car_control/install.log --single-version-externally-managed install_data

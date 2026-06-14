@@ -1,0 +1,2 @@
+source;share/diagnostic_remote_logging/environment/ament_prefix_path.sh
+source;share/diagnostic_remote_logging/environment/path.sh

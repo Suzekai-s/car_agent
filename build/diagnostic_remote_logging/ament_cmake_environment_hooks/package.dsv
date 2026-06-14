@@ -1,0 +1,4 @@
+source;share/diagnostic_remote_logging/local_setup.bash
+source;share/diagnostic_remote_logging/local_setup.dsv
+source;share/diagnostic_remote_logging/local_setup.sh
+source;share/diagnostic_remote_logging/local_setup.zsh

@@ -1,0 +1,144 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found diagnostic_msgs: 4.9.1 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found pluginlib: 5.1.4 (/opt/ros/humble/share/pluginlib/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/szk/workspace/car_distributed/car_agent/src/diagnostics/diagnostic_aggregator/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/szk/workspace/car_distributed/car_agent/build/diagnostic_aggregator
+[  8%] Building CXX object CMakeFiles/add_analyzer.dir/src/add_analyzer.cpp.o
+[ 16%] Building CXX object CMakeFiles/diagnostic_aggregator.dir/src/aggregator.cpp.o
+[ 25%] Building CXX object CMakeFiles/diagnostic_aggregator.dir/src/status_item.cpp.o
+[ 33%] Building CXX object CMakeFiles/diagnostic_aggregator.dir/src/analyzer_group.cpp.o
+[ 33%] Built target ament_cmake_python_copy_diagnostic_aggregator
+running egg_info
+creating diagnostic_aggregator.egg-info
+writing diagnostic_aggregator.egg-info/PKG-INFO
+writing dependency_links to diagnostic_aggregator.egg-info/dependency_links.txt
+writing top-level names to diagnostic_aggregator.egg-info/top_level.txt
+writing manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+reading manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+writing manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+[ 33%] Built target ament_cmake_python_build_diagnostic_aggregator_egg
+[ 41%] Linking CXX executable add_analyzer
+[ 41%] Built target add_analyzer
+[ 50%] Linking CXX shared library libdiagnostic_aggregator.so
+[ 50%] Built target diagnostic_aggregator
+[ 58%] Building CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/generic_analyzer.cpp.o
+[ 66%] Building CXX object CMakeFiles/aggregator_node.dir/src/aggregator_node.cpp.o
+[ 75%] Building CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/ignore_analyzer.cpp.o
+[ 83%] Building CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/discard_analyzer.cpp.o
+[ 91%] Linking CXX executable aggregator_node
+[ 91%] Built target aggregator_node
+[100%] Linking CXX shared library libdiagnostic_aggregator_analyzers.so
+[100%] Built target diagnostic_aggregator_analyzers
+-- Install configuration: ""
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/diagnostic_aggregator/aggregator_node
+-- Set runtime path of "/home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/diagnostic_aggregator/aggregator_node" to ""
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/diagnostic_aggregator/add_analyzer
+-- Set runtime path of "/home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/diagnostic_aggregator/add_analyzer" to ""
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/libdiagnostic_aggregator.so
+-- Set runtime path of "/home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/libdiagnostic_aggregator.so" to ""
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/libdiagnostic_aggregator_analyzers.so
+-- Set runtime path of "/home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/libdiagnostic_aggregator_analyzers.so" to ""
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/ignore_analyzer.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/aggregator.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/other_analyzer.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/analyzer_group.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/discard_analyzer.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/generic_analyzer.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/status_item.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/visibility_control.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/analyzer.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/include/diagnostic_aggregator/generic_analyzer_base.hpp
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/pythonpath.sh
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/pythonpath.dsv
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.0.7-py3.10.egg-info
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.0.7-py3.10.egg-info/PKG-INFO
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.0.7-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.0.7-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.0.7-py3.10.egg-info/top_level.txt
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator/__init__.py
+Listing '/home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator'...
+Compiling '/home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator/__init__.py'...
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/example.launch.py
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/lib/diagnostic_aggregator/example_pub.py
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/example_analyzers.yaml
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/example_add_analyzers.yaml
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/plugin_description.xml
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/library_path.sh
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/library_path.dsv
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/ament_index/resource_index/package_run_dependencies/diagnostic_aggregator
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/ament_index/resource_index/parent_prefix_path/diagnostic_aggregator
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/ament_prefix_path.sh
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/ament_prefix_path.dsv
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/path.sh
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/path.dsv
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.bash
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.sh
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.zsh
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.dsv
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/package.dsv
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/ament_index/resource_index/packages/diagnostic_aggregator
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/ament_index/resource_index/diagnostic_aggregator__pluginlib__plugin/diagnostic_aggregator
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport.cmake
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport-noconfig.cmake
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorConfig.cmake
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorConfig-version.cmake
+-- Installing: /home/szk/workspace/car_distributed/car_agent/install/diagnostic_aggregator/share/diagnostic_aggregator/package.xml

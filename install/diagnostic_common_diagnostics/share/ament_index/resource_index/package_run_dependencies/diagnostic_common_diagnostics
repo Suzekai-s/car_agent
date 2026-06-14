@@ -1,0 +1,1 @@
+diagnostic_updater;lm-sensors;python3-ntplib;python3-psutil;rclpy;ament_lint_auto;ament_cmake_xmllint;ament_cmake_lint_cmake;ament_cmake_pytest;launch_testing_ament_cmake
