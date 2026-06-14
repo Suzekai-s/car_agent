@@ -5,20 +5,6 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-# 如果还没有雷达驱动，先克隆
-if [ ! -d "src/Lslidar_ROS2_driver" ]; then
-    echo "[car_agent] 克隆 lslidar 雷达驱动..."
-    git clone --depth 1 --branch M10P/N10P https://github.com/Lslidar/Lslidar_ROS2_driver.git src/Lslidar_ROS2_driver
-    # Humble 兼容补丁：rosidl_generate_interfaces 需要显式声明 sensor_msgs 依赖
-    sed -i 's/DEPENDENCIES builtin_interfaces std_msgs/DEPENDENCIES builtin_interfaces std_msgs sensor_msgs/' src/Lslidar_ROS2_driver/lslidar_msgs/CMakeLists.txt
-fi
-
-# 如果还没有 diagnostic_updater，先克隆
-if [ ! -d "src/diagnostics" ]; then
-    echo "[car_agent] 克隆 diagnostic_updater..."
-    git clone --depth 1 --branch ros2-humble https://github.com/ros/diagnostics.git src/diagnostics
-fi
-
 source /opt/ros/humble/setup.bash
 colcon build "$@"
 source install/setup.bash
