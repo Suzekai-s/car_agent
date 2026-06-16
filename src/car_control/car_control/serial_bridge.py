@@ -69,22 +69,54 @@ class SerialBridge(Node):
             return
         if port_config == "auto":
             ports = serial.tools.list_ports.comports()
-            candidates = []
+            self.get_logger().info(f"检测到 {len(ports)} 个串口设备:")
+
+            # — 已知会被其他节点占用的串口设备（自动检测时跳过） —
+            # LiDAR 驱动通过 lsn10p.yaml 配置为 /dev/ttyACM0
+            lidar_patterns = ["lslidar", "lsiosr", "lsm10", "n10", "m10", "lsx10"]
+            # LiDAR 驱动配置为 serial_port_: /dev/ttyACM0，自动检测时避开
+            lidar_ports = ["/dev/ttyACM0"]
+
+            stm_candidates = []   # 优先：像 STM32 的
+            other_candidates = []  # 兜底：其他 USB 串口
+
             for p in ports:
-                desc = (p.description + " " + p.hwid).lower()
-                if any(kw in desc for kw in ["stm", "stlink", "ch340", "ch910", "cp210", "silicon"]):
-                    candidates.append(p.device)
-                elif "usb" in desc and ("serial" in desc or "uart" in desc):
-                    candidates.append(p.device)
+                desc = (p.description + " " + p.hwid + " " + p.device).lower()
+                self.get_logger().info(f"  {p.device}: {p.description}")
+
+                # 跳过 LiDAR 占用的口
+                if any(kw in desc for kw in lidar_patterns):
+                    self.get_logger().info(f"    ↳ 跳过（疑似 LiDAR）")
+                    continue
+                if p.device in lidar_ports:
+                    self.get_logger().info(f"    ↳ 跳过（该端口被 LiDAR 占用）")
+                    continue
+
+                if any(kw in desc for kw in ["stm", "stlink"]):
+                    stm_candidates.append(p.device)
+                elif any(kw in desc for kw in ["ch340", "ch910", "cp210", "silicon", "uart"]):
+                    other_candidates.append(p.device)
+                elif "usb" in desc and "serial" in desc:
+                    other_candidates.append(p.device)
+
+            candidates = stm_candidates + other_candidates
+
             if not candidates:
-                self.get_logger().error("未找到 STM32 串口，可手动指定 serial_bridge.port:=/dev/ttyUSB0")
+                self.get_logger().error(
+                    "未找到 STM32 串口。可手动指定 serial_bridge.port:=/dev/ttyUSB0"
+                    "，或先确认 STM32 已连接")
                 return
             port = candidates[0]
-            self.get_logger().info(f"自动检测到串口: {port}")
+            self.get_logger().info(f"自动选择串口: {port}")
         else:
             port = port_config
         try:
-            self._serial = serial.Serial(port=port, baudrate=self._get_param("baudrate").value, timeout=0.1, write_timeout=0.1)
+            self._serial = serial.Serial(
+                port=port,
+                baudrate=self._get_param("baudrate").value,
+                timeout=0.1,
+                write_timeout=0.1,
+            )
             self.get_logger().info(f"✅ 串口已连接: {port}")
         except serial.SerialException as e:
             self.get_logger().error(f"❌ 串口打开失败 {port}: {e}")
