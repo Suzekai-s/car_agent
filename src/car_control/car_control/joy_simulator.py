@@ -29,7 +29,7 @@ class JoySimulator(Node):
         msg = Joy()
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.header.frame_id = "joy"
-        msg.axes = [0.0, -self._linear_x, self._angular_z, 0.0, 0.0, 0.0]
+        msg.axes = [0.0, -self._linear_x, 0.0, self._angular_z, 0.0, 0.0]
         buttons = [0] * 11
         if self._lb_pressed:
             buttons[4] = 1

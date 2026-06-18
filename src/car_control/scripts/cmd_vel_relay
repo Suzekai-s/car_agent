@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+"""Entry point for cmd_vel_relay."""
+import sys
+from car_control.cmd_vel_relay import main
+
+if __name__ == "__main__":
+    sys.exit(main())

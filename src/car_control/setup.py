@@ -19,6 +19,7 @@ setup(
     maintainer_email="user@example.com",
     description="Car agent control logic: relay, serial bridge, joy simulator",
     license="Apache-2.0",
+    scripts=glob("scripts/*"),
     entry_points={
         "console_scripts": [
             "cmd_vel_relay = car_control.cmd_vel_relay:main",
