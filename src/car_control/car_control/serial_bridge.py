@@ -126,9 +126,11 @@ class SerialBridge(Node):
     def _send_line(self, line: str):
         if self._serial and self._serial.is_open:
             try:
-                self._serial.write((line + "\n").encode("utf-8"))
-            except serial.SerialException:
-                pass
+                data = (line + "\n").encode("utf-8")
+                n = self._serial.write(data)
+                self.get_logger().info(f"→ TX: {line} (bytes={n})")
+            except serial.SerialException as e:
+                self.get_logger().error(f"❌ 串口写入失败: {e}")
 
     def _cmd_callback(self, msg: Twist):
         self._last_cmd_time = time.time()
@@ -157,6 +159,7 @@ class SerialBridge(Node):
                 break
 
     def _parse_line(self, line: str):
+        self.get_logger().info(f"← RX: {line}")
         parts = line.split()
         if parts and parts[0] == "E" and len(parts) >= 3:
             try:
