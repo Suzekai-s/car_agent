@@ -50,7 +50,16 @@ def generate_launch_description():
     teleop_node = Node(
         package="teleop_twist_joy", executable="teleop_node",
         name="teleop_twist_joy_node", output="screen",
-        parameters=[PathJoinSubstitution([bringup_dir, "config", "car_joy.yaml"])],
+        parameters=[{
+            "enable_button": 4,
+            "enable_turbo_button": 5,
+            "axis_linear": {"x": 1},
+            "axis_angular": {"yaw": 3},
+            "scale_linear": {"x": 1.0},
+            "scale_angular": {"yaw": 1.5},
+            "scale_linear_turbo": {"x": 2.0},
+            "scale_angular_turbo": {"yaw": 2.5},
+        }],
         condition=IfCondition(LaunchConfiguration("joy")),
     )
 
