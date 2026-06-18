@@ -9,7 +9,7 @@ from geometry_msgs.msg import Twist
 class CmdVelRelay(Node):
     def __init__(self):
         super().__init__("cmd_vel_relay")
-        self.declare_parameter("max_linear_speed", 1.5)
+        self.declare_parameter("max_linear_speed", 1.0)
         self.declare_parameter("max_angular_speed", 2.0)
         self.declare_parameter("cmd_timeout", 0.5)
 

@@ -68,10 +68,11 @@ def generate_launch_description():
             "port": LaunchConfiguration("serial_port"),
             "baudrate": 115200,
             "heartbeat_interval": 0.5,
-            "wheel_diameter": 0.15,
-            "track_width": 0.35,
+            "wheel_diameter": 0.043,
+            "track_width": 0.235,
             "ticks_per_rev": 500,
             "gear_ratio": 30.0,
+            "encoder_multiplier": 4.0,
         }],
     )
 

@@ -9,10 +9,11 @@
   E <left_ticks> <right_ticks>\n   编码器累计脉冲 (50Hz)
 
 里程计参数通过ROS2参数配置:
-  wheel_diameter  轮径 (m)
-  track_width     履带中心距 (m)
-  ticks_per_rev   编码器每转脉冲数
-  gear_ratio      减速比
+  wheel_diameter      轮径 (m)
+  track_width         履带中心距 (m)
+  ticks_per_rev       编码器每转脉冲数
+  gear_ratio          减速比
+  encoder_multiplier  编码器倍频 (正交解码)
 """
 
 import math
@@ -33,10 +34,11 @@ class SerialBridge(Node):
         self.declare_parameter("port", "auto")
         self.declare_parameter("baudrate", 115200)
         self.declare_parameter("heartbeat_interval", 0.5)
-        self.declare_parameter("wheel_diameter", 0.15)
-        self.declare_parameter("track_width", 0.35)
+        self.declare_parameter("wheel_diameter", 0.043)
+        self.declare_parameter("track_width", 0.235)
         self.declare_parameter("ticks_per_rev", 500)
         self.declare_parameter("gear_ratio", 30.0)
+        self.declare_parameter("encoder_multiplier", 4.0)
 
         self._x = self._y = self._theta = 0.0
         self._last_left = self._last_right = None
@@ -168,7 +170,8 @@ class SerialBridge(Node):
         track = self._get_param("track_width").value
         tpr = self._get_param("ticks_per_rev").value
         gear = self._get_param("gear_ratio").value
-        dist_per_tick = math.pi * wheel_d / (tpr * gear)
+        em = self._get_param("encoder_multiplier").value
+        dist_per_tick = math.pi * wheel_d / (tpr * gear * em)
 
         if self._last_left is None:
             self._last_left = left_ticks
