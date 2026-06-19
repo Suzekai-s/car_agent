@@ -23,6 +23,7 @@ def generate_launch_description():
     declare_camera = DeclareLaunchArgument("camera", default_value="true")
     declare_lidar = DeclareLaunchArgument("lidar", default_value="true")
     declare_joy = DeclareLaunchArgument("joy", default_value="true")
+    declare_joy_dev = DeclareLaunchArgument("joy_dev", default_value="/dev/input/js1")
     declare_serial = DeclareLaunchArgument("serial_port", default_value="auto")
 
     # ── LiDAR ──
@@ -44,7 +45,7 @@ def generate_launch_description():
     # ── 手柄 ──
     joy_node = Node(
         package="joy", executable="joy_node", name="joy_node", output="screen",
-        parameters=[{"dev": "/dev/input/js0", "deadzone": 0.05, "autorepeat_rate": 20.0}],
+        parameters=[{"dev": LaunchConfiguration("joy_dev"), "deadzone": 0.05, "autorepeat_rate": 20.0}],
         condition=IfCondition(LaunchConfiguration("joy")),
     )
     teleop_node = Node(
@@ -52,13 +53,10 @@ def generate_launch_description():
         name="teleop_twist_joy_node", output="screen",
         parameters=[{
             "enable_button": 4,
-            "enable_turbo_button": 5,
             "axis_linear": {"x": 1},
-            "axis_angular": {"yaw": 3},
+            "axis_angular": {"yaw": 0},
             "scale_linear": {"x": 1.0},
-            "scale_angular": {"yaw": 1.5},
-            "scale_linear_turbo": {"x": 2.0},
-            "scale_angular_turbo": {"yaw": 2.5},
+            "scale_angular": {"yaw": 3.0},
         }],
         condition=IfCondition(LaunchConfiguration("joy")),
     )
@@ -67,6 +65,9 @@ def generate_launch_description():
     relay_node = Node(
         package="car_control", executable="cmd_vel_relay",
         name="cmd_vel_relay", output="screen",
+        parameters=[{
+            "max_angular_speed": 8.0,
+        }],
     )
 
     # ── 串口桥接（含里程计） ──
@@ -98,7 +99,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        declare_camera, declare_lidar, declare_joy, declare_serial,
+        declare_camera, declare_lidar, declare_joy, declare_joy_dev, declare_serial,
         lidar_node, camera_node,
         joy_node, teleop_node,
         relay_node, serial_node,
