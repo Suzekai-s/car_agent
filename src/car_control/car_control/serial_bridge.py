@@ -128,7 +128,7 @@ class SerialBridge(Node):
             try:
                 data = (line + "\n").encode("utf-8")
                 n = self._serial.write(data)
-                self.get_logger().info(f"→ TX: {line} (bytes={n})")
+                self.get_logger().debug(f"→ TX: {line} (bytes={n})")
             except serial.SerialException as e:
                 self.get_logger().error(f"❌ 串口写入失败: {e}")
 
@@ -159,7 +159,6 @@ class SerialBridge(Node):
                 break
 
     def _parse_line(self, line: str):
-        self.get_logger().info(f"← RX: {line}")
         parts = line.split()
         if parts and parts[0] == "E" and len(parts) >= 3:
             try:

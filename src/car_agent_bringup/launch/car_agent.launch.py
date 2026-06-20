@@ -29,7 +29,7 @@ def generate_launch_description():
     # ── LiDAR ──
     lidar_node = Node(
         package="lslidar_driver", executable="lslidar_driver_node",
-        name="lslidar_driver_node", output="screen",
+        name="lslidar_driver_node", output="log",
         parameters=[PathJoinSubstitution([bringup_dir, "config", "lsn10p.yaml"])],
         condition=IfCondition(LaunchConfiguration("lidar")),
     )
@@ -37,20 +37,20 @@ def generate_launch_description():
     # ── 摄像头 ──
     camera_node = Node(
         package="v4l2_camera", executable="v4l2_camera_node",
-        name="v4l2_camera_node", output="screen",
+        name="v4l2_camera_node", output="log",
         parameters=[PathJoinSubstitution([bringup_dir, "config", "usb_cam_params.yaml"])],
         condition=IfCondition(LaunchConfiguration("camera")),
     )
 
     # ── 手柄 ──
     joy_node = Node(
-        package="joy", executable="joy_node", name="joy_node", output="screen",
+        package="joy", executable="joy_node", name="joy_node", output="log",
         parameters=[{"dev": LaunchConfiguration("joy_dev"), "deadzone": 0.05, "autorepeat_rate": 20.0}],
         condition=IfCondition(LaunchConfiguration("joy")),
     )
     teleop_node = Node(
         package="teleop_twist_joy", executable="teleop_node",
-        name="teleop_twist_joy_node", output="screen",
+        name="teleop_twist_joy_node", output="log",
         parameters=[{
             "enable_button": 4,
             "axis_linear": {"x": 1},
@@ -64,7 +64,7 @@ def generate_launch_description():
     # ── 限速 ──
     relay_node = Node(
         package="car_control", executable="cmd_vel_relay",
-        name="cmd_vel_relay", output="screen",
+        name="cmd_vel_relay", output="log",
         parameters=[{
             "max_angular_speed": 8.0,
         }],
@@ -73,7 +73,7 @@ def generate_launch_description():
     # ── 串口桥接（含里程计） ──
     serial_node = Node(
         package="car_control", executable="serial_bridge",
-        name="serial_bridge", output="screen",
+        name="serial_bridge", output="log",
         parameters=[{
             "port": LaunchConfiguration("serial_port"),
             "baudrate": 115200,
